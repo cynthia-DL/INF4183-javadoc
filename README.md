@@ -2,12 +2,19 @@
 ## Quelles pages faire
 - Page d'accueil
 - Une page de classe 
-- **Les menus détoulant !**
+- **Les menus déroulant !**
+- d'après les pages de la javadoc 18 : https://docs.oracle.com/en/java/javase/18/docs/api/index.html
 
 ## Idées en vrac
+### Abdel-Gany
+- Cleanup Overview (enlever les fichiers non utile, code non utile...)
+
+### Cynthia
+- Cleanup Date (enlever les fichiers non utile, code non utile...)
+
+### Todo
 - Différencier les liens cliquable des liens non cliquables
 - Faire la barre de navigation comme des onglets
-- https://docs.oracle.com/en/java/javase/18/docs/api/index.html
 - Le menu hamburger quand la page est réduite est mal fait (vers le bas)
 - Rajouter des filtrer supplémentaires de recherche
 - Mettre plus en valeur le sommaire de la page
