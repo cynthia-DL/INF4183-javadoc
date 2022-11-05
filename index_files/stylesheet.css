@@ -713,6 +713,9 @@ main a[href*="://"]:focus::after {
         132-240 240 120 120 240-240 132 132V0z" fill="%23bb7a2a"/>\
       </svg>');
 }
+main a[href="./out-of-perimetter.html"]:link {
+    text-decoration: line-through;
+}
 
 /*
  * Styles for user-provided tables.
