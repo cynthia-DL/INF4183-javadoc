@@ -11,6 +11,10 @@
 
 ### Cynthia
 - Cleanup Date (enlever les fichiers non utile, code non utile...)
+- Dans le sommaire, remplacer les onglets par une liste à cocher d'option de filtre
+- Remontrer la table des matière au dessus de la description
+- Déplacer les sections "since" et "see also" en haut de l'article
+
 
 ### Todo
 - Différencier les liens cliquable des liens non cliquables
@@ -18,10 +22,7 @@
 - Le menu hamburger quand la page est réduite est mal fait (vers le bas)
 - Rajouter des filtrer supplémentaires de recherche
 - Mettre plus en valeur le sommaire de la page
-- Remontrer la table des matière au dessus de la description
 - Standardiser la présentation du sommaire
-- Déplacer les sections "since" et "see also" en haut de l'article
 - Avoir un fil d'Ariane (?)
 - Mettre en valeur la barre de nav locale
 - Expérimenter avec la barre sur le coté
-- Dans le sommaire, remplacer les onglets par une liste à cocher d'option de filtre
