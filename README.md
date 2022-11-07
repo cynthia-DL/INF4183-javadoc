@@ -8,6 +8,7 @@
 ## Idées en vrac
 ### Abdel-Gany
 - Cleanup Overview (enlever les fichiers non utile, code non utile...)
+- Différencier les liens qui mêne à rien(out of perimeter) dans les pages
 
 ### Cynthia
 - [x] Cleanup Date (enlever les fichiers non utile, code non utile...)
