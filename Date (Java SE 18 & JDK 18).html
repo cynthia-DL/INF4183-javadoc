@@ -87,6 +87,8 @@
     <script src="./Date (Java SE 18 &amp; JDK 18)_files/global.js.téléchargement"></script>
     <script type="text/javascript" src="./Date (Java SE 18 &amp; JDK 18)_files/ora_docs.js.téléchargement"></script>
     <script type="text/javascript" src="./Date (Java SE 18 &amp; JDK 18)_files/odc.js.téléchargement"></script!-->
+
+    <script src="jquery-3.6.0.min.js"></script>
 </head>
 
 <body class="class-declaration-page">
@@ -259,7 +261,6 @@
                         </dd>
                     </dl>
                     <hr>
-                    
                 </section>
                 <section class="summary">
                     <ul class="summary-list">
@@ -346,32 +347,23 @@
                             <section class="method-summary" id="method-summary">
                                 <h2>Method Summary</h2>
                                 <div id="method-summary-table">
-                                    <div class="table-tabs" role="tablist" aria-orientation="horizontal"><button
-                                            id="method-summary-table-tab0" role="tab" aria-selected="true"
-                                            aria-controls="method-summary-table.tabpanel" tabindex="0"
-                                            onkeydown="switchTab(event)"
-                                            onclick="show(&#39;method-summary-table&#39;, &#39;method-summary-table&#39;, 3)"
-                                            class="active-table-tab">All Methods</button><button
-                                            id="method-summary-table-tab1" role="tab" aria-selected="false"
-                                            aria-controls="method-summary-table.tabpanel" tabindex="-1"
-                                            onkeydown="switchTab(event)"
-                                            onclick="show(&#39;method-summary-table&#39;, &#39;method-summary-table-tab1&#39;, 3)"
-                                            class="table-tab">Static Methods</button><button
-                                            id="method-summary-table-tab2" role="tab" aria-selected="false"
-                                            aria-controls="method-summary-table.tabpanel" tabindex="-1"
-                                            onkeydown="switchTab(event)"
-                                            onclick="show(&#39;method-summary-table&#39;, &#39;method-summary-table-tab2&#39;, 3)"
-                                            class="table-tab">Instance Methods</button><button
-                                            id="method-summary-table-tab4" role="tab" aria-selected="false"
-                                            aria-controls="method-summary-table.tabpanel" tabindex="-1"
-                                            onkeydown="switchTab(event)"
-                                            onclick="show(&#39;method-summary-table&#39;, &#39;method-summary-table-tab4&#39;, 3)"
-                                            class="table-tab">Concrete Methods</button><button
-                                            id="method-summary-table-tab6" role="tab" aria-selected="false"
-                                            aria-controls="method-summary-table.tabpanel" tabindex="-1"
-                                            onkeydown="switchTab(event)"
-                                            onclick="show(&#39;method-summary-table&#39;, &#39;method-summary-table-tab6&#39;, 3)"
-                                            class="table-tab">Deprecated Methods</button></div>
+                                    <!-- ============BUTTON FILTER========== -->
+                                    <!-- Edited by Cynthia-->
+                                    <div class="table-tabs" role="tablist" aria-orientation="horizontal">
+                                        <label for="method-summary-table-static-methods">Static methods
+                                            <input id="method-summary-table-static-methods" name="method-summary-table-static-methods" type="checkbox" onchange="show('method-summary-table-static-methods')"/>
+                                        </label>
+                                            <label>Instance Methods
+                                            <input id="method-summary-table-instance-methods" name="method-summary-table-instance-methods" type="checkbox"  onchange="show('method-summary-table-instance-methods')"/>
+                                        </label>
+                                            <label>Concrete methods
+                                            <input id="method-summary-table-concrete-methods" name="method-summary-table-concrete-methods" type="checkbox" onchange="show('method-summary-table-concrete-methods')"/>
+                                        </label>
+                                            <label>Deprecated Methods
+                                            <input id="method-summary-table-deprecated-methods" name="method-summary-table-deprecated-methods" type="checkbox"  onchange="show('method-summary-table-deprecated-methods')"/>
+                                        </label>
+                                        </div>
+                                            <!-- ============END BUTTON FILTER========== -->
                                     <div id="method-summary-table.tabpanel" role="tabpanel">
                                         <div class="summary-table three-column-summary"
                                             aria-labelledby="method-summary-table-tab0">
@@ -379,84 +371,84 @@
                                             <div class="table-header col-second">Method</div>
                                             <div class="table-header col-last">Description</div>
                                             <div
-                                                class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+                                                class="col-first even-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods">
                                                 <code>boolean</code></div>
                                             <div
-                                                class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+                                                class="col-second even-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods">
                                                 <code><a href="./Date (Java SE 18 & JDK 18).html#after(java.util.Date)" class="member-name-link">after</a><wbr>(<a href="./Date (Java SE 18 & JDK 18).html" title="class in java.util">Date</a>&nbsp;when)</code>
                                             </div>
                                             <div
-                                                class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+                                                class="col-last even-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods">
                                                 <div class="block">Tests if this date is after the specified date.</div>
                                             </div>
                                             <div
-                                                class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+                                                class="col-first odd-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods">
                                                 <code>boolean</code></div>
                                             <div
-                                                class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+                                                class="col-second odd-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods">
                                                 <code><a href="./Date (Java SE 18 & JDK 18).html#before(java.util.Date)" class="member-name-link">before</a><wbr>(<a href="./Date (Java SE 18 & JDK 18).html" title="class in java.util">Date</a>&nbsp;when)</code>
                                             </div>
                                             <div
-                                                class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+                                                class="col-last odd-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods">
                                                 <div class="block">Tests if this date is before the specified date.
                                                 </div>
                                             </div>
                                             <div
-                                                class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+                                                class="col-first even-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods">
                                                 <code><a href="out-of-perimetter.html" title="class in java.lang">Object</a></code>
                                             </div>
                                             <div
-                                                class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+                                                class="col-second even-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods">
                                                 <code><a href="./Date (Java SE 18 & JDK 18).html#clone()" class="member-name-link">clone</a>()</code>
                                             </div>
                                             <div
-                                                class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+                                                class="col-last even-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods">
                                                 <div class="block">Return a copy of this object.</div>
                                             </div>
                                             <div
-                                                class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+                                                class="col-first odd-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods">
                                                 <code>int</code></div>
                                             <div
-                                                class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+                                                class="col-second odd-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods">
                                                 <code><a href="./Date (Java SE 18 & JDK 18).html#compareTo(java.util.Date)" class="member-name-link">compareTo</a><wbr>(<a href="./Date (Java SE 18 & JDK 18).html" title="class in java.util">Date</a>&nbsp;anotherDate)</code>
                                             </div>
                                             <div
-                                                class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+                                                class="col-last odd-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods">
                                                 <div class="block">Compares two Dates for ordering.</div>
                                             </div>
                                             <div
-                                                class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+                                                class="col-first even-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods">
                                                 <code>boolean</code></div>
                                             <div
-                                                class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+                                                class="col-second even-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods">
                                                 <code><a href="./Date (Java SE 18 & JDK 18).html#equals(java.lang.Object)" class="member-name-link">equals</a><wbr>(<a href="out-of-perimetter.html" title="class in java.lang">Object</a>&nbsp;obj)</code>
                                             </div>
                                             <div
-                                                class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+                                                class="col-last even-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods">
                                                 <div class="block">Compares two dates for equality.</div>
                                             </div>
                                             <div
-                                                class="col-first odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+                                                class="col-first odd-row-color method-summary-table method-summary-table-static-methods method-summary-table-concrete-methods">
                                                 <code>static <a href="./Date (Java SE 18 & JDK 18).html" title="class in java.util">Date</a></code>
                                             </div>
                                             <div
-                                                class="col-second odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+                                                class="col-second odd-row-color method-summary-table method-summary-table-static-methods method-summary-table-concrete-methods">
                                                 <code><a href="./Date (Java SE 18 & JDK 18).html#from(java.time.Instant)" class="member-name-link">from</a><wbr>(<a href="out-of-perimetter.html" title="class in java.time">Instant</a>&nbsp;instant)</code>
                                             </div>
                                             <div
-                                                class="col-last odd-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4">
+                                                class="col-last odd-row-color method-summary-table method-summary-table-static-methods method-summary-table-concrete-methods">
                                                 <div class="block">Obtains an instance of <code>Date</code> from an
                                                     <code>Instant</code> object.</div>
                                             </div>
                                             <div
-                                                class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+                                                class="col-first even-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods method-summary-table-deprecated-methods">
                                                 <code>int</code></div>
                                             <div
-                                                class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+                                                class="col-second even-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods method-summary-table-deprecated-methods">
                                                 <code><a href="./Date (Java SE 18 & JDK 18).html#getDate()" class="member-name-link">getDate</a>()</code>
                                             </div>
                                             <div
-                                                class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+                                                class="col-last even-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods method-summary-table-deprecated-methods">
                                                 <div class="block"><span class="deprecated-label">Deprecated.</span>
                                                     <div class="deprecation-comment">As of JDK version 1.1,
                                                         replaced by <code>Calendar.get(Calendar.DAY_OF_MONTH)</code>.
@@ -464,14 +456,14 @@
                                                 </div>
                                             </div>
                                             <div
-                                                class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+                                                class="col-first odd-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods method-summary-table-deprecated-methods">
                                                 <code>int</code></div>
                                             <div
-                                                class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+                                                class="col-second odd-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods method-summary-table-deprecated-methods">
                                                 <code><a href="./Date (Java SE 18 & JDK 18).html#getDay()" class="member-name-link">getDay</a>()</code>
                                             </div>
                                             <div
-                                                class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+                                                class="col-last odd-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods method-summary-table-deprecated-methods">
                                                 <div class="block"><span class="deprecated-label">Deprecated.</span>
                                                     <div class="deprecation-comment">As of JDK version 1.1,
                                                         replaced by <code>Calendar.get(Calendar.DAY_OF_WEEK)</code>.
@@ -479,14 +471,14 @@
                                                 </div>
                                             </div>
                                             <div
-                                                class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+                                                class="col-first even-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods method-summary-table-deprecated-methods">
                                                 <code>int</code></div>
                                             <div
-                                                class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+                                                class="col-second even-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods method-summary-table-deprecated-methods">
                                                 <code><a href="./Date (Java SE 18 & JDK 18).html#getHours()" class="member-name-link">getHours</a>()</code>
                                             </div>
                                             <div
-                                                class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+                                                class="col-last even-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods method-summary-table-deprecated-methods">
                                                 <div class="block"><span class="deprecated-label">Deprecated.</span>
                                                     <div class="deprecation-comment">As of JDK version 1.1,
                                                         replaced by <code>Calendar.get(Calendar.HOUR_OF_DAY)</code>.
@@ -494,69 +486,69 @@
                                                 </div>
                                             </div>
                                             <div
-                                                class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+                                                class="col-first odd-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods method-summary-table-deprecated-methods">
                                                 <code>int</code></div>
                                             <div
-                                                class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+                                                class="col-second odd-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods method-summary-table-deprecated-methods">
                                                 <code><a href="./Date (Java SE 18 & JDK 18).html#getMinutes()" class="member-name-link">getMinutes</a>()</code>
                                             </div>
                                             <div
-                                                class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+                                                class="col-last odd-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods method-summary-table-deprecated-methods">
                                                 <div class="block"><span class="deprecated-label">Deprecated.</span>
                                                     <div class="deprecation-comment">As of JDK version 1.1,
                                                         replaced by <code>Calendar.get(Calendar.MINUTE)</code>.</div>
                                                 </div>
                                             </div>
                                             <div
-                                                class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+                                                class="col-first even-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods method-summary-table-deprecated-methods">
                                                 <code>int</code></div>
                                             <div
-                                                class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+                                                class="col-second even-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods method-summary-table-deprecated-methods">
                                                 <code><a href="./Date (Java SE 18 & JDK 18).html#getMonth()" class="member-name-link">getMonth</a>()</code>
                                             </div>
                                             <div
-                                                class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+                                                class="col-last even-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods method-summary-table-deprecated-methods">
                                                 <div class="block"><span class="deprecated-label">Deprecated.</span>
                                                     <div class="deprecation-comment">As of JDK version 1.1,
                                                         replaced by <code>Calendar.get(Calendar.MONTH)</code>.</div>
                                                 </div>
                                             </div>
                                             <div
-                                                class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+                                                class="col-first odd-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods method-summary-table-deprecated-methods">
                                                 <code>int</code></div>
                                             <div
-                                                class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+                                                class="col-second odd-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods method-summary-table-deprecated-methods">
                                                 <code><a href="./Date (Java SE 18 & JDK 18).html#getSeconds()" class="member-name-link">getSeconds</a>()</code>
                                             </div>
                                             <div
-                                                class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+                                                class="col-last odd-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods method-summary-table-deprecated-methods">
                                                 <div class="block"><span class="deprecated-label">Deprecated.</span>
                                                     <div class="deprecation-comment">As of JDK version 1.1,
                                                         replaced by <code>Calendar.get(Calendar.SECOND)</code>.</div>
                                                 </div>
                                             </div>
                                             <div
-                                                class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+                                                class="col-first even-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods">
                                                 <code>long</code></div>
                                             <div
-                                                class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+                                                class="col-second even-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods">
                                                 <code><a href="./Date (Java SE 18 & JDK 18).html#getTime()" class="member-name-link">getTime</a>()</code>
                                             </div>
                                             <div
-                                                class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+                                                class="col-last even-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods">
                                                 <div class="block">Returns the number of milliseconds since January 1,
                                                     1970, 00:00:00 GMT
                                                     represented by this <code>Date</code> object.</div>
                                             </div>
                                             <div
-                                                class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+                                                class="col-first odd-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods method-summary-table-deprecated-methods">
                                                 <code>int</code></div>
                                             <div
-                                                class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+                                                class="col-second odd-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods method-summary-table-deprecated-methods">
                                                 <code><a href="./Date (Java SE 18 & JDK 18).html#getTimezoneOffset()" class="member-name-link">getTimezoneOffset</a>()</code>
                                             </div>
                                             <div
-                                                class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+                                                class="col-last odd-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods method-summary-table-deprecated-methods">
                                                 <div class="block"><span class="deprecated-label">Deprecated.</span>
                                                     <div class="deprecation-comment">As of JDK version 1.1,
                                                         replaced by <code>-(Calendar.get(Calendar.ZONE_OFFSET) +
@@ -564,14 +556,14 @@
                                                 </div>
                                             </div>
                                             <div
-                                                class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+                                                class="col-first even-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods method-summary-table-deprecated-methods">
                                                 <code>int</code></div>
                                             <div
-                                                class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+                                                class="col-second even-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods method-summary-table-deprecated-methods">
                                                 <code><a href="./Date (Java SE 18 & JDK 18).html#getYear()" class="member-name-link">getYear</a>()</code>
                                             </div>
                                             <div
-                                                class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+                                                class="col-last even-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods method-summary-table-deprecated-methods">
                                                 <div class="block"><span class="deprecated-label">Deprecated.</span>
                                                     <div class="deprecation-comment">As of JDK version 1.1,
                                                         replaced by <code>Calendar.get(Calendar.YEAR) - 1900</code>.
@@ -579,39 +571,39 @@
                                                 </div>
                                             </div>
                                             <div
-                                                class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+                                                class="col-first odd-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods">
                                                 <code>int</code></div>
                                             <div
-                                                class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+                                                class="col-second odd-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods">
                                                 <code><a href="./Date (Java SE 18 & JDK 18).html#hashCode()" class="member-name-link">hashCode</a>()</code>
                                             </div>
                                             <div
-                                                class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+                                                class="col-last odd-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods">
                                                 <div class="block">Returns a hash code value for this object.</div>
                                             </div>
                                             <div
-                                                class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6">
+                                                class="col-first even-row-color method-summary-table method-summary-table-static-methods method-summary-table-concrete-methods method-summary-table-deprecated-methods">
                                                 <code>static long</code></div>
                                             <div
-                                                class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6">
+                                                class="col-second even-row-color method-summary-table method-summary-table-static-methods method-summary-table-concrete-methods method-summary-table-deprecated-methods">
                                                 <code><a href="./Date (Java SE 18 & JDK 18).html#parse(java.lang.String)" class="member-name-link">parse</a><wbr>(<a href="out-of-perimetter.html" title="class in java.lang">String</a>&nbsp;s)</code>
                                             </div>
                                             <div
-                                                class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6">
+                                                class="col-last even-row-color method-summary-table method-summary-table-static-methods method-summary-table-concrete-methods method-summary-table-deprecated-methods">
                                                 <div class="block"><span class="deprecated-label">Deprecated.</span>
                                                     <div class="deprecation-comment">As of JDK version 1.1,
                                                         replaced by <code>DateFormat.parse(String s)</code>.</div>
                                                 </div>
                                             </div>
                                             <div
-                                                class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+                                                class="col-first odd-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods method-summary-table-deprecated-methods">
                                                 <code>void</code></div>
                                             <div
-                                                class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+                                                class="col-second odd-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods method-summary-table-deprecated-methods">
                                                 <code><a href="./Date (Java SE 18 & JDK 18).html#setDate(int)" class="member-name-link">setDate</a><wbr>(int&nbsp;date)</code>
                                             </div>
                                             <div
-                                                class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+                                                class="col-last odd-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods method-summary-table-deprecated-methods">
                                                 <div class="block"><span class="deprecated-label">Deprecated.</span>
                                                     <div class="deprecation-comment">As of JDK version 1.1,
                                                         replaced by
@@ -620,14 +612,14 @@
                                                 </div>
                                             </div>
                                             <div
-                                                class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+                                                class="col-first even-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods method-summary-table-deprecated-methods">
                                                 <code>void</code></div>
                                             <div
-                                                class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+                                                class="col-second even-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods method-summary-table-deprecated-methods">
                                                 <code><a href="./Date (Java SE 18 & JDK 18).html#setHours(int)" class="member-name-link">setHours</a><wbr>(int&nbsp;hours)</code>
                                             </div>
                                             <div
-                                                class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+                                                class="col-last even-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods method-summary-table-deprecated-methods">
                                                 <div class="block"><span class="deprecated-label">Deprecated.</span>
                                                     <div class="deprecation-comment">As of JDK version 1.1,
                                                         replaced by
@@ -636,14 +628,14 @@
                                                 </div>
                                             </div>
                                             <div
-                                                class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+                                                class="col-first odd-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods method-summary-table-deprecated-methods">
                                                 <code>void</code></div>
                                             <div
-                                                class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+                                                class="col-second odd-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods method-summary-table-deprecated-methods">
                                                 <code><a href="./Date (Java SE 18 & JDK 18).html#setMinutes(int)" class="member-name-link">setMinutes</a><wbr>(int&nbsp;minutes)</code>
                                             </div>
                                             <div
-                                                class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+                                                class="col-last odd-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods method-summary-table-deprecated-methods">
                                                 <div class="block"><span class="deprecated-label">Deprecated.</span>
                                                     <div class="deprecation-comment">As of JDK version 1.1,
                                                         replaced by
@@ -651,14 +643,14 @@
                                                 </div>
                                             </div>
                                             <div
-                                                class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+                                                class="col-first even-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods method-summary-table-deprecated-methods">
                                                 <code>void</code></div>
                                             <div
-                                                class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+                                                class="col-second even-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods method-summary-table-deprecated-methods">
                                                 <code><a href="./Date (Java SE 18 & JDK 18).html#setMonth(int)" class="member-name-link">setMonth</a><wbr>(int&nbsp;month)</code>
                                             </div>
                                             <div
-                                                class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+                                                class="col-last even-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods method-summary-table-deprecated-methods">
                                                 <div class="block"><span class="deprecated-label">Deprecated.</span>
                                                     <div class="deprecation-comment">As of JDK version 1.1,
                                                         replaced by
@@ -666,14 +658,14 @@
                                                 </div>
                                             </div>
                                             <div
-                                                class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+                                                class="col-first odd-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods method-summary-table-deprecated-methods">
                                                 <code>void</code></div>
                                             <div
-                                                class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+                                                class="col-second odd-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods method-summary-table-deprecated-methods">
                                                 <code><a href="./Date (Java SE 18 & JDK 18).html#setSeconds(int)" class="member-name-link">setSeconds</a><wbr>(int&nbsp;seconds)</code>
                                             </div>
                                             <div
-                                                class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+                                                class="col-last odd-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods method-summary-table-deprecated-methods">
                                                 <div class="block"><span class="deprecated-label">Deprecated.</span>
                                                     <div class="deprecation-comment">As of JDK version 1.1,
                                                         replaced by
@@ -681,28 +673,28 @@
                                                 </div>
                                             </div>
                                             <div
-                                                class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+                                                class="col-first even-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods">
                                                 <code>void</code></div>
                                             <div
-                                                class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+                                                class="col-second even-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods">
                                                 <code><a href="./Date (Java SE 18 & JDK 18).html#setTime(long)" class="member-name-link">setTime</a><wbr>(long&nbsp;time)</code>
                                             </div>
                                             <div
-                                                class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+                                                class="col-last even-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods">
                                                 <div class="block">Sets this <code>Date</code> object to represent a
                                                     point in time that is
                                                     <code>time</code> milliseconds after January 1, 1970 00:00:00 GMT.
                                                 </div>
                                             </div>
                                             <div
-                                                class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+                                                class="col-first odd-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods method-summary-table-deprecated-methods">
                                                 <code>void</code></div>
                                             <div
-                                                class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+                                                class="col-second odd-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods method-summary-table-deprecated-methods">
                                                 <code><a href="./Date (Java SE 18 & JDK 18).html#setYear(int)" class="member-name-link">setYear</a><wbr>(int&nbsp;year)</code>
                                             </div>
                                             <div
-                                                class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+                                                class="col-last odd-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods method-summary-table-deprecated-methods">
                                                 <div class="block"><span class="deprecated-label">Deprecated.</span>
                                                     <div class="deprecation-comment">As of JDK version 1.1,
                                                         replaced by
@@ -710,15 +702,15 @@
                                                 </div>
                                             </div>
                                             <div
-                                                class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+                                                class="col-first even-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods method-summary-table-deprecated-methods">
                                                 <code><a href="out-of-perimetter.html" title="class in java.lang">String</a></code>
                                             </div>
                                             <div
-                                                class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+                                                class="col-second even-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods method-summary-table-deprecated-methods">
                                                 <code><a href="./Date (Java SE 18 & JDK 18).html#toGMTString()" class="member-name-link">toGMTString</a>()</code>
                                             </div>
                                             <div
-                                                class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+                                                class="col-last even-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods method-summary-table-deprecated-methods">
                                                 <div class="block"><span class="deprecated-label">Deprecated.</span>
                                                     <div class="deprecation-comment">As of JDK version 1.1,
                                                         replaced by <code>DateFormat.format(Date date)</code>, using a
@@ -726,53 +718,53 @@
                                                 </div>
                                             </div>
                                             <div
-                                                class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+                                                class="col-first odd-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods">
                                                 <code><a href="out-of-perimetter.html" title="class in java.time">Instant</a></code>
                                             </div>
                                             <div
-                                                class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+                                                class="col-second odd-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods">
                                                 <code><a href="./Date (Java SE 18 & JDK 18).html#toInstant()" class="member-name-link">toInstant</a>()</code>
                                             </div>
                                             <div
-                                                class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+                                                class="col-last odd-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods">
                                                 <div class="block">Converts this <code>Date</code> object to an
                                                     <code>Instant</code>.</div>
                                             </div>
                                             <div
-                                                class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+                                                class="col-first even-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods method-summary-table-deprecated-methods">
                                                 <code><a href="out-of-perimetter.html" title="class in java.lang">String</a></code>
                                             </div>
                                             <div
-                                                class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+                                                class="col-second even-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods method-summary-table-deprecated-methods">
                                                 <code><a href="./Date (Java SE 18 & JDK 18).html#toLocaleString()" class="member-name-link">toLocaleString</a>()</code>
                                             </div>
                                             <div
-                                                class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4 method-summary-table-tab6">
+                                                class="col-last even-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods method-summary-table-deprecated-methods">
                                                 <div class="block"><span class="deprecated-label">Deprecated.</span>
                                                     <div class="deprecation-comment">As of JDK version 1.1,
                                                         replaced by <code>DateFormat.format(Date date)</code>.</div>
                                                 </div>
                                             </div>
                                             <div
-                                                class="col-first odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+                                                class="col-first odd-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods">
                                                 <code><a href="out-of-perimetter.html" title="class in java.lang">String</a></code>
                                             </div>
                                             <div
-                                                class="col-second odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+                                                class="col-second odd-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods">
                                                 <code><a href="./Date (Java SE 18 & JDK 18).html#toString()" class="member-name-link">toString</a>()</code>
                                             </div>
                                             <div
-                                                class="col-last odd-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+                                                class="col-last odd-row-color method-summary-table method-summary-table-instance-methods method-summary-table-concrete-methods">
                                                 <div class="block">Converts this <code>Date</code> object to a
                                                     <code>String</code>
                                                     of the form:
                                                 </div>
                                             </div>
                                             <div
-                                                class="col-first even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6">
+                                                class="col-first even-row-color method-summary-table method-summary-table-static-methods method-summary-table-concrete-methods method-summary-table-deprecated-methods">
                                                 <code>static long</code></div>
                                             <div
-                                                class="col-second even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6">
+                                                class="col-second even-row-color method-summary-table method-summary-table-static-methods method-summary-table-concrete-methods method-summary-table-deprecated-methods">
                                                 <code><a href="./Date (Java SE 18 & JDK 18).html#UTC(int,int,int,int,int,int)" class="member-name-link">UTC</a><wbr>(int&nbsp;year,
  int&nbsp;month,
  int&nbsp;date,
@@ -780,7 +772,7 @@
  int&nbsp;min,
  int&nbsp;sec)</code></div>
                                             <div
-                                                class="col-last even-row-color method-summary-table method-summary-table-tab1 method-summary-table-tab4 method-summary-table-tab6">
+                                                class="col-last even-row-color method-summary-table method-summary-table-static-methods method-summary-table-concrete-methods method-summary-table-deprecated-methods">
                                                 <div class="block"><span class="deprecated-label">Deprecated.</span>
                                                     <div class="deprecation-comment">As of JDK version 1.1,
                                                         replaced by
@@ -926,7 +918,7 @@
                             In all cases, arguments given to methods for these purposes need
                             not fall within the indicated ranges; for example, a date may be
                             specified as January 32 and is interpreted as meaning February 1.</p>
-                    </div>                 
+                    </div>
                 </section>
                 <hr>
                 <section class="details">
@@ -2472,6 +2464,46 @@
     <iframe name="trustarc_notice" id="trustarcNoticeFrame"
         title="Trustarc Cross-Domain Consent Frame" src="./Date (Java SE 18 &amp; JDK 18)_files/get.html"
     style="display: none;"></iframe>
-</body>
+<script>
+    var method_summary_table_selected = [];
 
+    function show(selected) {
+        let currentCheckbox = document.getElementById(selected);
+        console.log(selected)
+
+        if(currentCheckbox.checked && !method_summary_table_selected.includes(selected)){
+            method_summary_table_selected.push(selected)
+        } else {
+            method_summary_table_selected.pop(selected)
+        }
+
+        var toShow
+        var toHide
+
+        if(!method_summary_table_selected.length == 0){
+            let query = method_summary_table_selected.join(", div.")
+
+            toShow = Array.from(document.querySelectorAll("div."+query))
+            toHide = Array.from(document.querySelectorAll("div.method-summary-table")).filter(x => !toShow.includes(x))
+
+        } else {
+            toShow = Array.from(document.querySelectorAll("div.method-summary-table-instance-methods, div.method-summary-table-static-methods, div.method-summary-table-concrete-methods, div.method-summary-table-deprecated-methods"))
+            toHide = new Array()
+        }
+
+        console.table(toShow)
+
+        toHide.forEach(function(elem) {
+            elem.style.display = 'none';
+        });
+
+        toShow.forEach(function(elem, index) {
+            elem.style.display = '';
+            var isEvenRow = index % (3 * 2) < 3;
+            elem.classList.remove(isEvenRow ? oddRowColor : evenRowColor);
+            elem.classList.add(isEvenRow ? evenRowColor : oddRowColor);
+         });
+    }
+</script>
+</body>
 </html>
