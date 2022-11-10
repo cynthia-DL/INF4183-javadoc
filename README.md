@@ -11,10 +11,10 @@
 - Différencier les liens qui mêne à rien(out of perimeter) dans les pages
 
 ### Cynthia
-- Cleanup Date (enlever les fichiers non utile, code non utile...)
-- Dans le sommaire, remplacer les onglets par une liste à cocher d'option de filtre
-- Remontrer la table des matière au dessus de la description
-- Déplacer les sections "since" et "see also" en haut de l'article
+- [x] Cleanup Date (enlever les fichiers non utile, code non utile...)
+- [x] Dans le sommaire, remplacer les onglets par une liste à cocher d'option de filtre
+- [x] Remontrer la table des matière au dessus de la description
+- [x] Déplacer les sections "since" et "see also" en haut de l'article
 
 
 ### Todo
