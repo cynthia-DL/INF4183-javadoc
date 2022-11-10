@@ -688,6 +688,28 @@ ul.help-subtoc > li::before {
 span.help-note {
     font-style: italic;
 }
+
+/*
+* Styles for buttons
+*/
+.collapsible {
+    background-color: transparent;
+    color: #444;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    float: right;
+}
+
+.collapsible:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.active:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+}
+
 /*
  * Indicator icon for external links.
  */
