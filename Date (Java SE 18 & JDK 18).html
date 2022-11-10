@@ -2481,7 +2481,7 @@
         var toHide
 
         if(!method_summary_table_selected.length == 0){
-            let query = method_summary_table_selected.join(", div.")
+            let query = method_summary_table_selected.join(".")
 
             toShow = Array.from(document.querySelectorAll("div."+query))
             toHide = Array.from(document.querySelectorAll("div.method-summary-table")).filter(x => !toShow.includes(x))
