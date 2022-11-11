@@ -688,6 +688,86 @@ ul.help-subtoc > li::before {
 span.help-note {
     font-style: italic;
 }
+
+/* Abdel added this */
+/*
+* Styles for buttons
+*/
+.collapsible {
+    background-color: transparent;
+    color: #444;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    float: right;
+}
+
+.collapsible:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.active:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+}
+
+/*
+* Styles for dropdown menu
+*/
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    float: none;
+    border: none;
+    cursor: pointer;
+    font-size: inherit;
+    background-color: inherit;
+    text-transform:uppercase;
+}
+
+/* Add a red background color to navbar links on hover */
+.nav-bar-cell1-rev:hover{
+    background-color: red;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #4d7a97;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Center links other than the content */
+.link-box {
+    display: flex;
+    justify-content: center;
+}
+
+/* End of Abdel's section*/
+
 /*
  * Indicator icon for external links.
  */
@@ -810,7 +890,6 @@ table.striped > tbody > tr > th {
     ul.nav-list {
         display: block;
         width: 40%;
-        float:left;
         clear: left;
         margin: 10px 0 0 0;
         padding: 0;
