@@ -7,8 +7,9 @@
 
 ## Idées en vrac
 ### Abdel-Gany
-- Cleanup Overview (enlever les fichiers non utile, code non utile...)
-- Différencier les liens qui mêne à rien(out of perimeter) dans les pages
+- [x] Cleanup Overview (enlever les fichiers non utile, code non utile...)
+- [x] Différencier les liens qui mêne à rien(out of perimeter) dans les pages
+- [x] Faire la barre de navigation comme des onglets
 
 ### Cynthia
 - [x] Cleanup Date (enlever les fichiers non utile, code non utile...)
@@ -19,7 +20,7 @@
 
 ### Todo
 - Différencier les liens cliquable des liens non cliquables
-- Faire la barre de navigation comme des onglets
+
 - Le menu hamburger quand la page est réduite est mal fait (vers le bas)
 - Rajouter des filtrer supplémentaires de recherche
 - Mettre plus en valeur le sommaire de la page
