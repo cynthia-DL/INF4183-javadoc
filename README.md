@@ -10,6 +10,7 @@
 - [x] Cleanup Overview (enlever les fichiers non utile, code non utile...)
 - [x] Différencier les liens qui mêne à rien(out of perimeter) dans les pages
 - [x] Faire la barre de navigation comme des onglets
+- [ ] Régler la barre de recherche 65% fini
 
 ### Cynthia
 - [x] Cleanup Date (enlever les fichiers non utile, code non utile...)
