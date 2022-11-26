@@ -11,6 +11,13 @@
  * HTML element throughout the page.
  */
 
+a.fixed-haut-de-page {
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+    opacity: 0.5;
+}
+
 body {
     background-color:#ffffff;
     color:#353833;
@@ -150,7 +157,7 @@ ul.sub-nav-list-small {
     display: none;
 }
 .sub-nav {
-    background-color:#dee3e9;
+    background-color:#be4d25;
     float:left;
     width:100%;
     overflow:hidden;
@@ -182,6 +189,7 @@ ul.nav-list li {
     text-transform:uppercase;
 }
 .sub-nav .nav-list-search {
+    color: #fff;
     float:right;
     margin:0;
     padding:6px;
@@ -190,9 +198,15 @@ ul.nav-list li {
     position:relative;
 }
 ul.sub-nav-list li {
+    color: #ffffff;
     list-style:none;
     float:left;
 }
+
+ul.sub-nav-list li a{
+    color:orange;
+}
+
 .top-nav a:link, .top-nav a:active, .top-nav a:visited {
     color:#ffffff;
     text-decoration:none;
