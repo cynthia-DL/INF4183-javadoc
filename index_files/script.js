@@ -29,13 +29,13 @@ var typeSearchIndex;
 var memberSearchIndex;
 var tagSearchIndex;
 function loadScripts(doc, tag) {
-    createElem(doc, tag, 'search.js');
+    createElem(doc, tag, 'index_files/search.js');
 
-    createElem(doc, tag, 'module-search-index.js');
-    createElem(doc, tag, 'package-search-index.js');
-    createElem(doc, tag, 'type-search-index.js');
-    createElem(doc, tag, 'member-search-index.js');
-    createElem(doc, tag, 'tag-search-index.js');
+    createElem(doc, tag, 'index_files/module-search-index.js');
+    createElem(doc, tag, 'index_files/package-search-index.js');
+    createElem(doc, tag, 'index_files/type-search-index.js');
+    createElem(doc, tag, 'index_files/member-search-index.js');
+    createElem(doc, tag, 'index_files/tag-search-index.js');
 }
 
 function createElem(doc, tag, path) {
