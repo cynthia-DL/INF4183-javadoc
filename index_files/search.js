@@ -118,8 +118,8 @@ $.widget("custom.catcomplete", $.ui.autocomplete, {
                 ($('input[type="checkbox"].searchcheck#Pac').prop("checked") && item.category == catPackages) ||
                 ($('input[type="checkbox"].searchcheck#Typ').prop("checked") && item.category == catTypes)    ||
                 ($('input[type="checkbox"].searchcheck#Mem').prop("checked") && item.category == catMembers)    ||
-                ($('input[type="checkbox"].searchcheck#Tag').prop("checked") && item.category == catSearchTags) //||
-                //!(item.category == catModules || item.category == catPackages || item.category == catTypes || item.category == catMembers || item.category == catSearchTags)
+                ($('input[type="checkbox"].searchcheck#Tag').prop("checked") && item.category == catSearchTags) ||
+                !(item.category == catModules || item.category == catPackages || item.category == catTypes || item.category == catMembers || item.category == catSearchTags)
             ){
                 var li;
                 if (item.category && item.category !== currentCategory) {

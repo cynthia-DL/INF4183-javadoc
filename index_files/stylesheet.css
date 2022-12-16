@@ -2,7 +2,7 @@
  * Javadoc style sheet
  */
 
- @import url('INF4183-javadoc/index_files/resources/dejavu.css');
+ @import url('./resources/dejavu.css');
 
 /*
  * Styles for individual HTML elements.
@@ -641,9 +641,8 @@ ul.see-list-long li:not(:last-child):after {
      border-radius:0;
      width:12px;
      height:12px;
-     position:absolute;
-     right:12px;
-     top:10px;
+     position:inherit;
+     bottom:4px;
      font-size:0;
  }
  ::placeholder {
@@ -988,6 +987,19 @@ ul.see-list-long li:not(:last-child):after {
          transform: rotate(-45deg);
          transform-origin: 10% 90%;
          width: 26px;
+     }
+     .nav-bar-cell1-rev {
+        position: absolute;
+        top: 4px;
+        left: 40px;
+        float:left;
+        width: fit-content;
+        margin: auto 5px;
+     }
+     .link-box {
+        display: inherit;
+        justify-content: left;
+        float: left;
      }
  }
  @media screen and (max-width: 800px) {
