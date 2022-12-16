@@ -29,13 +29,13 @@ var typeSearchIndex;
 var memberSearchIndex;
 var tagSearchIndex;
 function loadScripts(doc, tag) {
-    createElem(doc, tag, 'INF4183-javadoc/index_files/search.js');
+    createElem(doc, tag, './index_files/search.js');
 
-    createElem(doc, tag, 'INF4183-javadoc/index_files/module-search-index.js');
-    createElem(doc, tag, 'INF4183-javadoc/index_files/package-search-index.js');
-    createElem(doc, tag, 'INF4183-javadoc/index_files/type-search-index.js');
-    createElem(doc, tag, 'INF4183-javadoc/index_files/member-search-index.js');
-    createElem(doc, tag, 'INF4183-javadoc/index_files/tag-search-index.js');
+    createElem(doc, tag, './index_files/module-search-index.js');
+    createElem(doc, tag, './index_files/package-search-index.js');
+    createElem(doc, tag, './index_files/type-search-index.js');
+    createElem(doc, tag, './index_files/member-search-index.js');
+    createElem(doc, tag, './index_files/tag-search-index.js');
 }
 
 function createElem(doc, tag, path) {
