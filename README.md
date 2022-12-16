@@ -10,7 +10,8 @@
 - [x] Cleanup Overview (enlever les fichiers non utile, code non utile...)
 - [x] Différencier les liens qui mêne à rien(out of perimeter) dans les pages
 - [x] Faire la barre de navigation comme des onglets
-- [ ] Régler la barre de recherche 65% fini
+- [x] Régler la barre de recherche
+- [x] Rajouter des filtrer supplémentaires de recherche
 
 ### Cynthia
 - [x] Cleanup Date (enlever les fichiers non utile, code non utile...)
@@ -23,7 +24,6 @@
 - Différencier les liens cliquable des liens non cliquables
 
 - Le menu hamburger quand la page est réduite est mal fait (vers le bas)
-- Rajouter des filtrer supplémentaires de recherche
 - Mettre plus en valeur le sommaire de la page
 - Standardiser la présentation du sommaire
 - Avoir un fil d'Ariane (?)
