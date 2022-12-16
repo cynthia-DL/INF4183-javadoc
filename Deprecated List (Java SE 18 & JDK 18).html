@@ -118,7 +118,18 @@
                                    </ul>
                             </div>
                             <div class="sub-nav">
-                                   <div class="nav-list-search"><label for="search-input">SEARCH:</label>
+                                   <div class="nav-list-search">
+                                          <label for="Mod">Modules:</label>
+                                          <input class="searchcheck" type="checkbox" id="Mod">
+                                          <label for="Pac">| Package:</label>
+                                          <input class="searchcheck" type="checkbox" id="Pac">
+                                          <label for="Typ">| Class:</label>
+                                          <input class="searchcheck" type="checkbox" id="Typ">
+                                          <label for="Mem">| Member:</label>
+                                          <input class="searchcheck" type="checkbox" id="Mem">
+                                          <label for="Tag">| Tag:</label>
+                                          <input class="searchcheck" type="checkbox" id="Tag">
+                                          <label for="search-input">SEARCH:</label>
                                           <input type="text" id="search-input" placeholder="Search"
                                                  class="ui-autocomplete-input" autocomplete="off">
                                           <input type="reset" id="reset-button" value="reset">
@@ -150,6 +161,8 @@
                                    elements deprecated in a specific release.)</span>
                             <ul class="block-list">
                                    <li>
+                                          <section class="collapsible-section">
+                                          <h2>Terminally Deprecated<button class="collapsible"></button></h2>
                                           <div id="for-removal">
                                                  <div class="table-tabs" role="tablist" aria-orientation="horizontal">
                                                         <button id="for-removal-tab0" role="tab" aria-selected="true"
@@ -1454,15 +1467,15 @@
                                                                              initial context should be copied into the
                                                                              environment hashtable:
                                                                              <pre><code>
-     Hashtable env = new Hashtable();
-     env.put(Context.INITIAL_CONTEXT_FACTORY,
-       ((Applet) this).getParameter(Context.INITIAL_CONTEXT_FACTORY));
-     env.put(Context.PROVIDER_URL,
-       ((Applet) this).getParameter(Context.PROVIDER_URL));
-     // ... other properties ...
+                                                                             Hashtable env = new Hashtable();
+                                                                             env.put(Context.INITIAL_CONTEXT_FACTORY,
+                                                                                    ((Applet) this).getParameter(Context.INITIAL_CONTEXT_FACTORY));
+                                                                             env.put(Context.PROVIDER_URL,
+                                                                                    ((Applet) this).getParameter(Context.PROVIDER_URL));
+                                                                             // ... other properties ...
 
-     Context ctx = new InitialContext(env);
- </code></pre>
+                                                                             Context ctx = new InitialContext(env);
+                                                                             </code></pre>
                                                                       </div>
                                                                </div>
                                                                <div
@@ -1743,10 +1756,13 @@
                                                         </div>
                                                  </div>
                                           </div>
+                                          </section>
                                    </li>
                             </ul>
                             <ul class="block-list">
                                    <li>
+                                          <section class="collapsible-section">
+                                          <h2>Interfaces<button class="collapsible"></button></h2>
                                           <div id="interface">
                                                  <div class="table-tabs" role="tablist" aria-orientation="horizontal">
                                                         <button id="interface-tab0" role="tab" aria-selected="true"
@@ -1993,10 +2009,13 @@
                                                         </div>
                                                  </div>
                                           </div>
+                                          </section>
                                    </li>
                             </ul>
                             <ul class="block-list">
                                    <li>
+                                          <section class="collapsible-section">
+                                          <h2>Classes<button class="collapsible"></button></h2>
                                           <div id="class">
                                                  <div class="table-tabs" role="tablist" aria-orientation="horizontal">
                                                         <button id="class-tab0" role="tab" aria-selected="true"
@@ -2549,10 +2568,13 @@
                                                         </div>
                                                  </div>
                                           </div>
+                                          </section>
                                    </li>
                             </ul>
                             <ul class="block-list">
                                    <li>
+                                          <section class="collapsible-section">
+                                          <h2>Exception Classes<button class="collapsible"></button></h2>
                                           <div id="exception-class">
                                                  <div class="table-tabs" role="tablist" aria-orientation="horizontal">
                                                         <button id="exception-class-tab0" role="tab"
@@ -2723,10 +2745,13 @@
                                                         </div>
                                                  </div>
                                           </div>
+                                          </section>
                                    </li>
                             </ul>
                             <ul class="block-list">
                                    <li>
+                                          <section class="collapsible-section">
+                                          <h2>Fields<button class="collapsible"></button></h2>
                                           <div id="field">
                                                  <div class="table-tabs" role="tablist" aria-orientation="horizontal">
                                                         <button id="field-tab0" role="tab" aria-selected="true"
@@ -3646,10 +3671,13 @@
                                                         </div>
                                                  </div>
                                           </div>
+                                          </section>
                                    </li>
                             </ul>
                             <ul class="block-list">
                                    <li>
+                                          <section class="collapsible-section">
+                                          <h2>Methods<button class="collapsible"></button></h2>
                                           <div id="method">
                                                  <div class="table-tabs" role="tablist" aria-orientation="horizontal">
                                                         <button id="method-tab0" role="tab" aria-selected="true"
@@ -8826,10 +8854,13 @@ java.lang.String, java.lang.Throwable)</code></a> instead.</div>
                                                         </div>
                                                  </div>
                                           </div>
+                                          </section>
                                    </li>
                             </ul>
                             <ul class="block-list">
                                    <li>
+                                          <section class="collapsible-section">
+                                          <h2>Constructors<button class="collapsible"></button></h2>
                                           <div id="constructor">
                                                  <div class="table-tabs" role="tablist" aria-orientation="horizontal">
                                                         <button id="constructor-tab0" role="tab" aria-selected="true"
@@ -9730,10 +9761,13 @@ java.lang.String, java.lang.Throwable)</code></a> instead.</div>
                                                         </div>
                                                  </div>
                                           </div>
+                                          </section>
                                    </li>
                             </ul>
                             <ul class="block-list">
                                    <li>
+                                          <section class="collapsible-section">
+                                          <h2>Enum Constants<button class="collapsible"></button></h2>
                                           <div id="enum-constant">
                                                  <div class="table-tabs" role="tablist" aria-orientation="horizontal">
                                                         <button id="enum-constant-tab0" role="tab" aria-selected="true"
@@ -9771,6 +9805,7 @@ java.lang.String, java.lang.Throwable)</code></a> instead.</div>
                                                         </div>
                                                  </div>
                                           </div>
+                                          </section>
                                    </li>
                             </ul>
                      </main>
@@ -9804,6 +9839,7 @@ java.lang.String, java.lang.Throwable)</code></a> instead.</div>
                      </footer>
               </div>
        </div>
+       <script type="text/javascript" src="./index_files/global_content_behaviour.js"></script>
        <a href="https://cynthia-dl.github.io/INF4183-javadoc/Deprecated List (Java SE 18 & JDK 18).html" class="fixed-haut-de-page"><img width="50" src="https://imgs.search.brave.com/ZftWNCVcWkX-MFUZhx_pmLTjUS4ET7wjEs6ipiZBVbI/rs:fit:512:512:1/g:ce/aHR0cHM6Ly9jZG4u/aWNvbi1pY29ucy5j/b20vaWNvbnMyLzUx/MC9QTkcvNTEyL2Fy/cm93LXVwLWNfaWNv/bi1pY29ucy5jb21f/NTA0NTgucG5n" alt=""></a>
 </body>
 <ul id="ui-id-1" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front"

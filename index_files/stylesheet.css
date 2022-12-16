@@ -18,6 +18,12 @@ a.fixed-haut-de-page {
     opacity: 0.5;
 }
 
+section.collapsible-section {
+    border: #000000;
+    background-color: #f4f4f4;
+    padding: 1%;
+}
+
 body {
     background-color:#ffffff;
     color:#353833;
@@ -411,10 +417,20 @@ ul.see-list-long li:not(:last-child):after {
  div.table-tabs > button.active-table-tab {
     background: #F8981D;
     color: #253441;
+    border: none;
+    cursor: pointer;
+    padding: 5px 12px 7px 12px;
+    font-weight: bold;
+    margin-right: 3px;
  }
  div.table-tabs > button.table-tab {
     background: #4D7A97;
     color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    padding: 5px 12px 7px 12px;
+    font-weight: bold;
+    margin-right: 3px;
  }
  .two-column-summary {
      display: grid;
