@@ -220,6 +220,17 @@ ul.sub-nav-list li a{
     color:#253441;
     margin: auto 5px;
 }
+
+.nav-bar-tab{
+    background-color:#be4d25;
+    color:#253441;
+    margin: auto 5px;
+}
+
+.nav-bar-tab a:hover {
+    color:#000000;
+}
+
 .skip-nav {
     position:absolute;
     top:auto;

@@ -49,25 +49,17 @@ function getHighlightedText(item, matcher, fallbackMatcher) {
     }
     return highlighted;
 }
-function getURLPrefix(ui) {
-    var urlPrefix="";
-    var slash = "/";
-    if (ui.item.category === catModules) {
-        return ui.item.l + slash;
-    } else if (ui.item.category === catPackages && ui.item.m) {
-        return ui.item.m + slash;
-    } else if (ui.item.category === catTypes || ui.item.category === catMembers) {
-        if (ui.item.m) {
-            urlPrefix = ui.item.m + slash;
-        } else {
-            $.each(packageSearchIndex, function(index, item) {
-                if (item.m && ui.item.p === item.l) {
-                    urlPrefix = item.m + slash;
-                }
-            });
-        }
+function getURL(ui) {
+    var url="";
+    if (ui.item.category === catModules || ui.item.category === catTypes || ui.item.category === catPackages && ui.item.m) {
+        if( ui.item.l == "java.util" || ui.item.l == "java.base" || ui.item.l == "Date")
+            url = ui.item.l + " (Java SE 18 & JDK 18).html";
+    } else if (ui.item.category === catMembers) {
+        if(ui.item.c == "Date")
+            return ui.item.c + " (Java SE 18 & JDK 18).html#" + ui.item.l;
     }
-    return urlPrefix;
+    if(url == "") url = "out-of-perimetter.html";
+    return url;
 }
 function createSearchPattern(term) {
     var pattern = "";
@@ -328,37 +320,7 @@ $(function() {
         },
         select: function(event, ui) {
             if (ui.item.category) {
-                var url = getURLPrefix(ui);
-                if (ui.item.category === catModules) {
-                    url += "module-summary.html";
-                } else if (ui.item.category === catPackages) {
-                    if (ui.item.u) {
-                        url = ui.item.u;
-                    } else {
-                        url += ui.item.l.replace(/\./g, '/') + "/package-summary.html";
-                    }
-                } else if (ui.item.category === catTypes) {
-                    if (ui.item.u) {
-                        url = ui.item.u;
-                    } else if (ui.item.p === UNNAMED) {
-                        url += ui.item.l + ".html";
-                    } else {
-                        url += ui.item.p.replace(/\./g, '/') + "/" + ui.item.l + ".html";
-                    }
-                } else if (ui.item.category === catMembers) {
-                    if (ui.item.p === UNNAMED) {
-                        url += ui.item.c + ".html" + "#";
-                    } else {
-                        url += ui.item.p.replace(/\./g, '/') + "/" + ui.item.c + ".html" + "#";
-                    }
-                    if (ui.item.u) {
-                        url += ui.item.u;
-                    } else {
-                        url += ui.item.l;
-                    }
-                } else if (ui.item.category === catSearchTags) {
-                    url += ui.item.u;
-                }
+                var url = getURL(ui);
                 if (top !== window) {
                     parent.classFrame.location = pathtoroot + url;
                 } else {
